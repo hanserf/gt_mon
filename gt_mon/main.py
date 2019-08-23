@@ -15,7 +15,7 @@ current_directory = os.path.dirname(__file__)
 database_path = os.path.join(current_directory, 'database.db')
 path_to_config_file = os.path.join(current_directory, 'static','config.json')
 with open(path_to_config_file) as config_file:
-    rs_config = json.load(config_file)
+    gt_config = json.load(config_file)
 
 UPLOAD_FOLDER = '/upload'
 ALLOWED_EXTENSIONS = set('csv')
