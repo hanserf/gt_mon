@@ -3,24 +3,20 @@ import serial
 import sys
 import numpy as np
 import multiprocessing
-#import ino
-import json
-
-class ImportConfig(object):
-    def __init__(self, config):
-        self.__dict__ = json.loads(config)
+import sqlite3
+from gt_mon.helper_functions import ImportConfig
+from gt_mon.helper_functions import ResultStructure
 
 
 class SerialRunner(multiprocessing.Process):
-    def __init__(self, config_file_path,ImportConfig):
+    def __init__(self, ImportConfig):
         super(SerialRunner, self).__init__()
-        self.config_file = config_file_path
         self.my_config = ImportConfig
         
         
     def run(self) -> None:
         port = self.my_config.port
-        baudrate = self.my_config.serialbaudrate
+        baudrate = self.my_config.baudrate
         ser = serial.Serial(port, baudrate, timeout=.1)
         time.sleep(1)
         print(ser.name)

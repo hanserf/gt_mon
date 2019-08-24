@@ -1,12 +1,9 @@
 {
-  "sqlite3": {
     "database": "database.db",
     "table_name": "MONITOR",
-    "ds18b20_column": "temperature",
-    "num_sensors": "2",
-    "sensor_identifier": [
-      "INDOOR",
-      "OUTDOOR"
+    "row_name": [
+      "Indoor Temp",
+      "Outdoor Temp"
     ],
     "led": [
       "WHITE",
@@ -17,11 +14,8 @@
       "REGULATED"
     ],
     "PWM_REG_WHITE" : "0",
-    "PWM_REG_PURPLE": "0" 
-
-  },
-  "Arduino": {
+    "PWM_REG_PURPLE": "0" ,
     "port": "/dev/ttyACM0",
     "baudrate": "115200"
-  }
+  
 }
