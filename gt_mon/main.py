@@ -13,16 +13,16 @@ from flask import stream_with_context, request, Response
 from werkzeug.utils import secure_filename
 import gt_mon.serial_runner
 
+
 current_directory = os.path.dirname(__file__)
-database_path = os.path.join(current_directory, 'database.db')
+gt_config = gt_mon.serial_runner.ImportConfig(path_to_config_file)
+database_path = os.path.join(current_directory, ????)
 path_to_config_file = os.path.join(current_directory, 'static','config.json')
-with open(path_to_config_file) as config_file:
-    gt_config = json.load(config_file)
 
 UPLOAD_FOLDER = '/upload'
 ALLOWED_EXTENSIONS = set('csv')
 db_table_name = 'GT_MON'
-
+db_row_name
 app = Flask(__name__)
 app.config.from_object(__name__)  # load config from this file , flaskr.py
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
