@@ -2,4 +2,4 @@
 build/*
 dist
 gt_mon.egg-info
-*__pycache
+*__pycache__
