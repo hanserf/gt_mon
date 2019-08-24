@@ -1,9 +1,11 @@
 import os
+import sys
 import json
 import sqlite3
 from sqlite3 import Error
 import numpy as np
 import multiprocessing
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from flask import Flask, render_template, send_file, send_from_directory
 from flask import Flask, request, redirect, url_for, flash
 from flask import jsonify, g
