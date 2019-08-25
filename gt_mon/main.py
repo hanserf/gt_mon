@@ -5,12 +5,13 @@ import sqlite3
 from sqlite3 import Error
 import numpy as np
 import multiprocessing
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from flask import Flask, render_template, send_file, send_from_directory
 from flask import Flask, request, redirect, url_for, flash
 from flask import jsonify, g
 from flask import stream_with_context, request, Response
 from werkzeug.utils import secure_filename
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import gt_mon.serial_runner
 
 
