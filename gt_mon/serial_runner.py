@@ -24,7 +24,8 @@ class SerialRunner(multiprocessing.Process):
         while True:
             # Capture serial output as a decoded string
             val = str(ser.readline().decode().strip('\r\n'))
-            val = val.split("/")
+            #val = val.split("/")
             # print()
             if(monitor == True):
-                print(val, end="\r", flush=True)
+                #for line in val :
+                print(val)#, end="\r", flush=True)
