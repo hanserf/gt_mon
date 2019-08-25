@@ -1,6 +1,8 @@
 {
     "database": "database.db",
     "table_name": "MONITOR",
+    "num_sensors": "2",
+    "num_lights" : "2",
     "row_name": [
       "Indoor Temp",
       "Outdoor Temp"
@@ -13,8 +15,6 @@
       "OFF",
       "REGULATED"
     ],
-    "PWM_REG_WHITE" : "0",
-    "PWM_REG_PURPLE": "0" ,
     "port": "/dev/ttyACM0",
     "baudrate": "115200"
   
