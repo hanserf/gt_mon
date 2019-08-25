@@ -10,15 +10,14 @@ from flask import Flask, request, redirect, url_for, flash
 from flask import jsonify, g
 from flask import stream_with_context, request, Response
 from werkzeug.utils import secure_filename
-
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import gt_mon.serial_runner
+import serial_runner
 
 
 current_directory = os.path.dirname(__file__)
 path_to_config_file = os.path.join(current_directory, 'static','config.json')
 with open(path_to_config_file) as config_file:
-    gt_config = gt_mon.serial_runner.ImportConfig(config_file)
+    gt_config = serial_runner.ImportConfig(config_file)
 database_path = os.path.join(current_directory, gt_config.database)
 print(database_path)
 
@@ -33,7 +32,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.secret_key = '33'
 
 def main():
-    runner_process = gt_mon.serial_runner.SerialRunner(gt_config)
+    runner_process = serial_runner.SerialRunner(gt_config)
     runner_process.daemon = True
     runner_process.start()
 

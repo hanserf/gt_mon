@@ -1,9 +1,9 @@
 import json
 
+
 class ImportConfig(object):
     def __init__(self, config):
         self.__dict__ = json.load(config)
-
 
 
 class ResultStructure:

@@ -4,16 +4,16 @@ import sys
 import numpy as np
 import multiprocessing
 import sqlite3
-from gt_mon.helper_functions import ImportConfig
-from gt_mon.helper_functions import ResultStructure
+from helper_functions import ImportConfig
+from helper_functions import ResultStructure
+import re
 
 
 class SerialRunner(multiprocessing.Process):
     def __init__(self, ImportConfig):
         super(SerialRunner, self).__init__()
         self.my_config = ImportConfig
-        
-        
+
     def run(self) -> None:
         port = self.my_config.port
         baudrate = self.my_config.baudrate
