@@ -1,0 +1,41 @@
+Locating devices...Found 2 devices.
+Found device 0 with address: 2858245206000078
+Found device 1 with address: 288B045106000095
+
+
+#------------------------------------------#
+
+
+RUN NUMBER :0
+CURRENT DATE AND TIME : 
+2019/8/25 (Sunday) 18:59:43
+TIME OF DAY :
+18:59:43
+REQUESTING TEMPERATURES: 
+Temperature for device: 0
+Temp C: 24.50 Temp F: 76.10
+Temperature for device: 1
+Temp C: 21.25 Temp F: 70.25
+Writing LED RGB HIGH, COB LOW
+Purple lights ON, 50%, White lights ON, 50%
+
+
+#------------------------------------------#
+
+
+RUN NUMBER :1
+CURRENT DATE AND TIME : 
+2019/8/25 (Sunday) 18:59:53
+TIME OF DAY :
+18:59:53
+REQUESTING TEMPERATURES: 
+Temperature for device: 0
+Temp C: 24.50 Temp F: 76.10
+Temperature for device: 1
+Temp C: 21.25 Temp F: 70.25
+Writing LED RGB HIGH, COB LOW
+Purple lights ON, 50%, White lights ON, 50%
+
+
+#------------------------------------------#
+
