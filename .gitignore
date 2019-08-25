@@ -1,4 +1,5 @@
 *.vscode
+*.idea
 build/*
 dist
 gt_mon.egg-info
