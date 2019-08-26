@@ -3,11 +3,22 @@
     "table_name": "MONITOR",
     "num_sensors": "2",
     "num_lights" : "2",
-    "row_name": [
-      "Indoor Temp",
-      "Outdoor Temp"
+    "db_rows":[
+      "UID",
+      "DATE",
+      "UNIX_TIME",
+      "DS18B20_ID",
+      "TEMP",
+      "LAMPS",
+      "LIGHT STATE",
+      "PWM_SETPOINT",
+      "TOTAL_POWER"
     ],
-    "led": [
+    "sensor_placements" : [
+      "INDOOR",
+      "OUTDOOR"
+    ],
+    "lamps": [
       "WHITE",
       "PURPLE"
     ],
